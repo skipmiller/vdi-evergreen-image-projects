@@ -1,0 +1,15 @@
+{
+    "Name": "EvergreenLibrary",
+    "Applications": [
+        {
+            "Name": "Microsoft.NET",
+            "EvergreenApp": "Microsoft.NET",
+            "Filter": "$_.Architecture -eq \"x64\" -and $_.Installer -eq \"windowsdesktop\" -and $_.Channel -eq \"LTS\""
+        },
+        {
+            "Name": "MicrosoftTeams",
+            "EvergreenApp": "MicrosoftTeams",
+            "Filter": "$_.Architecture -eq \"x64\" -and $_.Release -eq \"Enterprise\""
+        }
+    ]
+}
